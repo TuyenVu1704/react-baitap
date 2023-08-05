@@ -1,0 +1,25 @@
+"emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+
+
+"turboConsoleLog.logMessagePrefix": "",
+  "turboConsoleLog.addSemicolonInTheEnd": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+"editor.inlineSuggest.enabled": true,
+  "editor.formatOnSave": true,
+
+
+"editor.quickSuggestions": {
+    "strings": true
+  },
+
+"tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    ".*Class",
+    ".*ClassName"
+  ],
