@@ -1,3 +1,5 @@
+import Buttona from "@/components/button/Button";
+
 import { Fragment } from "react";
 
 type TLoading = "fetching" | "successful" | "error";
@@ -17,12 +19,12 @@ export default function Home() {
     //
     //
 
-    // Cách render 1 phần tử
-    const renderLoadingValue: Record<TLoading, React.ReactNode> = {
-        fetching: <div>Loading</div>,
-        successful: <div>Successfully</div>,
-        error: <div>Error</div>,
-    };
+    // // Cách render 1 phần tử
+    // const renderLoadingValue: Record<TLoading, React.ReactNode> = {
+    //     fetching: <div>Loading</div>,
+    //     successful: <div>Successfully</div>,
+    //     error: <div>Error</div>,
+    // };
 
     return (
         // <Fragment>
@@ -39,9 +41,7 @@ export default function Home() {
         // Cách render mảng
 
         <Fragment>
-            {number.map((value, index) => {
-                return <div key={index}>{value}</div>; // Khi render mảng key index là bắt buộc, vì key không được trùng nhau
-            })}
+            <Buttona title="contact me" variants="primary" size="lg"></Buttona>
         </Fragment>
     );
 }
