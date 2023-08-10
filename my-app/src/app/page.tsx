@@ -1,4 +1,6 @@
-import Buttona from "@/components/button/Button";
+import { Avatar } from "@/avatar";
+import { Buttona } from "@/components/button";
+import { IconLongArrowRight } from "@/components/icons";
 
 import { Fragment } from "react";
 
@@ -41,7 +43,14 @@ export default function Home() {
         // Cách render mảng
 
         <Fragment>
-            <Buttona title="contact me" variants="primary" size="lg"></Buttona>
+            <Buttona variants="primary" className=" h-16" size="lg">
+                <span>Learn more</span>
+                <IconLongArrowRight></IconLongArrowRight>
+            </Buttona>
+            <Avatar
+                title="Tuyen"
+                image="https://source.unsplash.com/random"
+            ></Avatar>
         </Fragment>
     );
 }
